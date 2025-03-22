@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="name">Know The Weather</h1>
+
+    <!-- Corrected Form with Proper ID -->
+    <form id="location-form">
+      <input class="searchbox" type="search" id="location-input" placeholder="Enter city name">
+      <button type="submit" class="search_box">Get Weather</button>
+    </form>
+
+    <div class="error"><p>Invalid city name</p></div>
+
+    <!-- Corrected Weather Data Container ID -->
+    <div id="weather-data">
+      <div class="weather_icon" id="weather_location">
+        <div class="weather_type">
+          <img src="assets/clear.png" alt="sun">
+        </div>
+        <h1 class="city">Delhi</h1>
+        <div class="temperature">
+          <h1 class="temp_text">Temperature</h1>
+          <img src="assets/2682809_cold_freezing_low_temperature_termometer_icon.png" alt="thermometer">
+          <h1 class="temp">30<sup>°C</sup></h1>
+        </div>
+        <div class="humidity">
+          <h1 class="humid_text">Humidity</h1>
+          <img src="assets/2682807_drop_high_humidity_percentage_precipitation_icon.png" alt="humidity">
+          <h1 class="humid">0%</h1>
+        </div>
+        <div class="windspeed">
+          <h1 class="wind_text">Wind Speed</h1>
+          <img src="assets/3741354_weather_wind_windy_icon.png" alt="windspeed">
+          <h1 class="wind">13 km/h</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
